@@ -13,18 +13,44 @@
 <body>
 
     <header class="header">
-        <div class="header-item">Github</div>
+        <div class="header-item"><a href="https://github.com/CompetentKoala">Github</a></div>
         <div class="header-item"><a href="index.html">Home</a></div>
         <div class="header-item"><a href="index2.html">Projects</a></div>
         <div class="header-item"><a href="index3.html">About Me</a></div>
-        <div class="header-item"><a href="index4.html">Contact me</a></div>
+        <div class="header-item"><a href="index4.html">Contact</a></div>
     </header>
 
-    <div class="centerdiv">
-        <img src="cameron2.jpeg" alt="Cameron-picture">
-        <h1>Cameron Kuykendall</h1>
-        <h2>Hey, thats me!</h2>
+    <div class="centerdiv4">
+        <form action="#" method="post">
+            <fieldset class="fieldset">
+                <legend>Contact Me</legend>
+
+                <label for="fname">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="subscribe">Do you need a quick response?</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+
+                <label for="subscribe">Are you a company?</label>
+                <input type="radio" id="subscribe" name="subscribe">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+
+    </body>
+    </html>
     </div>
 </body>
+<footer class="footer"></footer>
 
 </html>
