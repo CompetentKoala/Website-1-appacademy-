@@ -74,6 +74,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const scale = Math.max(minScale, Math.min(maxScale, (proximity - distance) / proximity));
 
             element.style.transform = `scale(${scale})`;
+
+            const blurAmount = (1 - scale) * 3; // Adjust '10' to control the maximum blur
+            element.style.filter = `blur(${blurAmount}px)`;
         });
     }
 
