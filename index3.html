@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=Rubik:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index3.css">
     <title>Cameron Kuykendall Portfolio</title>
 </head>
 
@@ -19,51 +19,310 @@
         <div class="header-item"><a href="index3.html">About Me</a></div>
         <div class="header-item"><a href="index4.html">Contact</a></div>
     </header>
+    <div class="container">
+        <!-- First Slider -->
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
 
+                    <!-- IMAGE START -->
+                    <div class="slide first" class="img1">
+                        <img src="/IMAGES/10.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="img2" src="/IMAGES/15.jpg" alt="">
+                    </div>
+                    <div class="slide" class="img3">
+                        <img src="/IMAGES/16.jpg" alt="">
+                    </div>
+                    <!-- IMAGE END -->
 
-        <div class="gallery">
-            <div class="gallery-item">
-                <a href="https://scontent.fhio2-1.fna.fbcdn.net/v/t39.30808-6/288033209_5386535274701322_4708018113958885792_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=D4DjTQczjbAAX-eKCFC&_nc_ht=scontent.fhio2-1.fna&oh=00_AfDUFOcJbD1q1Ys2AZvmlvTbmkhX5k_AptvWyB8S0jjG5Q&oe=65C99A14" target="_blank">
-                    <img src="https://scontent.fhio2-1.fna.fbcdn.net/v/t39.30808-6/288033209_5386535274701322_4708018113958885792_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=D4DjTQczjbAAX-eKCFC&_nc_ht=scontent.fhio2-1.fna&oh=00_AfDUFOcJbD1q1Ys2AZvmlvTbmkhX5k_AptvWyB8S0jjG5Q&oe=65C99A14" alt="Image 1">
-                </a>
-                <div class="label">I love</div>
+                    <!-- AUTOMATIC NAV START -->
+                    <div class="navigation-auto">
+                        <div class="auto-btn-1"></div>
+                        <div class="auto-btn-2"></div>
+                        <div class="auto-btn-3"></div>
+                    </div>
+                    <!-- AUTOMATIC NAV END -->
+                </div>
+
+                <!-- Manual Navigation Start -->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+                <!-- Manual Navigation END -->
             </div>
 
-            <div class="gallery-item">
-                <a href="https://scontent.fhio2-1.fna.fbcdn.net/v/t1.6435-9/134760666_3772718709416328_6119936509592725291_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=4H5aLbL8AEUAX_0G3E6&_nc_ht=scontent.fhio2-1.fna&oh=00_AfDORk9waJ1DcB6huMx9K3wyqd89vfMIHx0fj5I4RwTEkg&oe=65EBAE2C target="_blank">
-                    <img src="https://scontent.fhio2-1.fna.fbcdn.net/v/t1.6435-9/134760666_3772718709416328_6119936509592725291_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=4H5aLbL8AEUAX_0G3E6&_nc_ht=scontent.fhio2-1.fna&oh=00_AfDORk9waJ1DcB6huMx9K3wyqd89vfMIHx0fj5I4RwTEkg&oe=65EBAE2C" alt="Image 2">
-                </a>
-                <div class="label">I Camp</div>
+            <!-- Arrow and Text Area -->
+            <div class="main-text">
+                <p>I Love</p>
             </div>
-
-            <div class="gallery-item">
-                <a href="https://scontent.fhio2-1.fna.fbcdn.net/v/t1.6435-9/96003149_3097054393649433_2633960634974208000_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=SbGjojtIBTkAX9GckoK&_nc_ht=scontent.fhio2-1.fna&oh=00_AfABCittSPAEVjHd1oFe35Tl49lonU3Jza5O8Mj2aKhTsQ&oe=65EBDCED" target="_blank">
-                    <img src="https://scontent.fhio2-1.fna.fbcdn.net/v/t1.6435-9/96003149_3097054393649433_2633960634974208000_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=SbGjojtIBTkAX9GckoK&_nc_ht=scontent.fhio2-1.fna&oh=00_AfABCittSPAEVjHd1oFe35Tl49lonU3Jza5O8Mj2aKhTsQ&oe=65EBDCED" alt="Image 3">
-                </a>
-                <div class="label">I music</div>
+            <div class="arrow" onclick="toggleText(this)">
+                &#x25BC; <!-- Down arrow -->
             </div>
-
-            <div class="gallery-item">
-                <a href="https://scontent.fhio2-1.fna.fbcdn.net/v/t39.30808-6/397268722_10218040913332802_1848214083329304632_n.jpg?stp=cp6_dst-jpg&_nc_cat=108&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=O0rmovm7_TMAX9EKfjc&_nc_ht=scontent.fhio2-1.fna&oh=00_AfDacbd3cct_gVzP7uZ_LjDxNcOswJDS4QP_BQfYDY-VeA&oe=65C85B8F" target="_blank">
-                    <img src="https://scontent.fhio2-1.fna.fbcdn.net/v/t39.30808-6/397268722_10218040913332802_1848214083329304632_n.jpg?stp=cp6_dst-jpg&_nc_cat=108&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=O0rmovm7_TMAX9EKfjc&_nc_ht=scontent.fhio2-1.fna&oh=00_AfDacbd3cct_gVzP7uZ_LjDxNcOswJDS4QP_BQfYDY-VeA&oe=65C85B8F" alt="Image 4">
-                </a>
-                <div class="label">I food</div>
-            </div>
-
-            <div class="gallery-item">
-                <a href="https://scontent.fhio2-1.fna.fbcdn.net/v/t39.30808-6/387176293_10217967269491752_2652320623738181725_n.jpg?stp=cp6_dst-jpg&_nc_cat=108&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=qWOGmPYqMhMAX8c3ycQ&_nc_ht=scontent.fhio2-1.fna&oh=00_AfBn2_BfV91JqWMpatye6TH2tLOLCUB0iuaGgaDyM8TFzg&oe=65C898A2" target="_blank">
-                    <img src="https://scontent.fhio2-1.fna.fbcdn.net/v/t39.30808-6/387176293_10217967269491752_2652320623738181725_n.jpg?stp=cp6_dst-jpg&_nc_cat=108&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=qWOGmPYqMhMAX8c3ycQ&_nc_ht=scontent.fhio2-1.fna&oh=00_AfBn2_BfV91JqWMpatye6TH2tLOLCUB0iuaGgaDyM8TFzg&oe=65C898A2" alt="Image 5">
-                </a>
-                <div class="label">I cat</div>
-            </div>
-
-            <div class="gallery-item">
-                <a href="https://scontent.fhio2-2.fna.fbcdn.net/v/t39.30808-6/381182818_10217914442611113_2840588308409970258_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=KyH5w6Efbb0AX_odegh&_nc_ht=scontent.fhio2-2.fna&oh=00_AfBB9ZYolPsNpeUl6CGKZNo5vs070pug2Id-dYw932zrIw&oe=65C8EA7C" target="_blank">
-                    <img src="https://scontent.fhio2-2.fna.fbcdn.net/v/t39.30808-6/381182818_10217914442611113_2840588308409970258_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=KyH5w6Efbb0AX_odegh&_nc_ht=scontent.fhio2-2.fna&oh=00_AfBB9ZYolPsNpeUl6CGKZNo5vs070pug2Id-dYw932zrIw&oe=65C8EA7C" alt="Image 6">
-                </a>
-                <div class="label">I listen</div>
+            <div class="slider-text">
+                <p> I have been with my Finance for seven and a half years. We are planning to get married soon, but arent rushing it, our love is not goverened by the Government. We have two black kitties and love to watch movies and T.V.</p>
             </div>
         </div>
+
+        <!-- Second Slider -->
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="bradio-btn" id="bradio1">
+                    <input type="radio" name="bradio-btn" id="bradio2">
+                    <input type="radio" name="bradio-btn" id="bradio3">
+
+                    <!-- IMAGE START -->
+                    <div class="slide first" class="bimg1">
+                        <img src="/IMAGES/14.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="bimg2" src="/IMAGES/11.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="bimg3" src="/IMAGES/8.jpeg" alt="">
+                    </div>
+                    <!-- IMAGE END -->
+
+                    <!-- AUTOMATIC NAV START -->
+                    <div class="bnavigation-auto">
+                        <div class="bauto-btn-1"></div>
+                        <div class="bauto-btn-2"></div>
+                        <div class="bauto-btn-3"></div>
+                    </div>
+                    <!-- AUTOMATIC NAV END -->
+                </div>
+
+                <!-- Manual Navigation Start -->
+                <div class="bnavigation-manual">
+                    <label for="bradio1" class="bmanual-btn"></label>
+                    <label for="bradio2" class="bmanual-btn"></label>
+                    <label for="bradio3" class="bmanual-btn"></label>
+                </div>
+                <!-- Manual Navigation END -->
+            </div>
+
+            <!-- Arrow and Text Area -->
+            <div class="main-text">
+                <p>I Explore</p>
+            </div>
+            <div class="arrow" onclick="toggleText(this)">
+                &#x25BC; <!-- Down arrow -->
+            </div>
+            <div class="slider-text">
+                <p>Man do I like an adventure. I used to be in the boyscouts and love camping and backpacking. Last season, I picked up snowboarding, and the summer of 2024, I got PADI certifed for scuba.</p>
+            </div>
+        </div>
+
+        <!-- THIRD Slider -->
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="cradio-btn" id="cradio1">
+                    <input type="radio" name="cradio-btn" id="cradio2">
+                    <input type="radio" name="cradio-btn" id="cradio3">
+
+                    <!-- IMAGE START -->
+                    <div class="slide first" >
+                        <img src="/IMAGES/20.png" class="cimg1" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="cimg2" src="/IMAGES/23.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="cimg3" src="/IMAGES/22.png" alt="">
+                    </div>
+                    <!-- IMAGE END -->
+
+                    <!-- AUTOMATIC NAV START -->
+                    <div class="cnavigation-auto">
+                        <div class="cauto-btn-1"></div>
+                        <div class="cauto-btn-2"></div>
+                        <div class="cauto-btn-3"></div>
+                    </div>
+                    <!-- AUTOMATIC NAV END -->
+                </div>
+
+                <!-- Manual Navigation Start -->
+                <div class="cnavigation-manual">
+                    <label for="cradio1" class="cmanual-btn"></label>
+                    <label for="cradio2" class="cmanual-btn"></label>
+                    <label for="cradio3" class="cmanual-btn"></label>
+                </div>
+                <!-- Manual Navigation END -->
+            </div>
+
+            <!-- Arrow and Text Area -->
+            <div class="main-text">
+                <p>I Solve Problems</p>
+            </div>
+            <div class="arrow" onclick="toggleText(this)">
+                &#x25BC; <!-- Down arrow -->
+            </div>
+
+            <div class="slider-text">
+                <p>I hold a belief that we are put on this earth to help others, THE LAW OF AFFECTION. If you can AFFECT people, you will be rewarded. I am choosing computers(software, apps, extentions, etc.) as the route to help my fellow humans.<br> Let's work together to solve peoples problems! </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="gallery">
+        <div class="gallery-item">
+            <img class="img" src="/IMAGES/10.jpg" alt="Image 1">
+            <div class="label">
+                I Love
+                <span class="arrow">►</span>
+            </div>
+            <div class="more-text">
+                I have been with my Financee for seven and a half years. We are planning to get married soon, but arent rushing it. We have two black kitties and love to watch movies and T.V.
+            </div>
+        </div> -->
+
+        <!-- <div class="gallery-item">
+            <img  src="/IMAGES/14.jpg" alt="Image 2">
+            <div class="label">
+                I Explore
+                <span class="arrow">►</span>
+            </div>
+            <div class="more-text">
+                Man do I like an adventure. I used to be in the boyscouts and love camping and backpacking. Last season, I picked up snowboarding, and the summer of 2024, I got PADI certifed for scuba.
+            </div>
+        </div> -->
+
+        <!-- <div class="gallery-item">
+            <img src="/IMAGES/13.jpg" alt="Image 3">
+            <div class="label">
+                I Music
+                <span class="arrow">►</span>
+            </div>
+            <div class="more-text">
+                More text about music.
+            </div>
+        </div> -->
+    </div>
+
+
+
+    <script>
+//TEXT TOGGLE
+function toggleText(arrow) {
+    const text = arrow.nextElementSibling;
+    const maxHeight = text.scrollHeight + "px";
+
+    if (text.style.maxHeight) {
+        text.style.maxHeight = null; // Collapse text
+        arrow.classList.remove('active'); // Reset arrow rotation
+    } else {
+        text.style.maxHeight = maxHeight; // Expand text
+        arrow.classList.add('active'); // Rotate arrow
+    }
+}
+
+
+//slide 1/////////////////////////////////////////////////////////
+function randomIntFromInterval(min, max) { // min and max included
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+
+
+
+let counter = 1;
+let autoSlideInterval;
+
+function startAutoSlide() {
+    autoSlideInterval = setInterval(function(){
+        document.getElementById("radio" + counter).checked = true;
+        counter++;
+
+        if (counter > 3){
+            counter = 1;
+        }
+    }, randomIntFromInterval(3000, 5000));
+}
+
+function resetCounter(newCounter) {
+    clearInterval(autoSlideInterval); // Stop the current interval
+    counter = newCounter;             // Update the counter
+    startAutoSlide();                 // Restart the slideshow
+}
+
+// Listen for clicks on each radio button
+document.querySelectorAll('input[name="radio-btn"]').forEach((radio, index) => {
+    radio.addEventListener('change', () => {
+        resetCounter(index + 1); // Set the counter to the clicked radio button's index
+    });
+});
+//slide 2/////////////////////////////////////////////////////////
+let bcounter = 1;
+let bautoSlideInterval;
+
+function bstartAutoSlide() {
+    bautoSlideInterval = setInterval(function(){
+        document.getElementById("bradio" + counter).checked = true;
+        bcounter++;
+
+        if (bcounter > 3){
+            bcounter = 1;
+        }
+    }, randomIntFromInterval(3000, 5000));
+}
+
+function bresetCounter(newCounter) {
+    clearInterval(bautoSlideInterval); // Stop the current interval
+    bcounter = newCounter;             // Update the counter
+    bstartAutoSlide();                 // Restart the slideshow
+}
+
+// Listen for clicks on each radio button
+document.querySelectorAll('input[name="bradio-btn"]').forEach((radio, index) => {
+    radio.addEventListener('change', () => {
+        resetCounter(index + 1); // Set the counter to the clicked radio button's index
+    });
+});
+//slide 3/////////////////////////////////////////////////////////
+let ccounter = 1;
+let cautoSlideInterval;
+
+function cstartAutoSlide() {
+    cautoSlideInterval = setInterval(function(){
+        document.getElementById("cradio" + counter).checked = true;
+        ccounter++;
+
+        if (ccounter > 3){
+            ccounter = 1;
+        }
+    }, randomIntFromInterval(3000, 5000));
+}
+
+function cresetCounter(newCounter) {
+    clearInterval(cautoSlideInterval); // Stop the current interval
+    ccounter = newCounter;             // Update the counter
+    cstartAutoSlide();                 // Restart the slideshow
+}
+
+// Listen for clicks on each radio button
+document.querySelectorAll('input[name="cradio-btn"]').forEach((radio, index) => {
+    radio.addEventListener('change', () => {
+        resetCounter(index + 1); // Set the counter to the clicked radio button's index
+    });
+});
+
+
+
+bstartAutoSlide();
+startAutoSlide();
+cstartAutoSlide();
+
+    </script>
+
 </body>
 <footer class="footer"></footer>
 

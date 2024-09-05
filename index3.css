@@ -1,0 +1,303 @@
+body {
+    font-family: Oswald;
+    color: rgb(0, 0, 0);
+    background-color: #000000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    gap: 20px; /* Space between sliders */
+    margin-top: 10%;
+}
+
+/* Common Slider Styles */
+.slider {
+    width: 100%;
+    height: 350px;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    border: 5px solid white;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+    position: relative; /* Important for positioning manual nav */
+}
+
+.slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.img2 {
+    object-position: 50% -20vh;
+}
+
+.bimg3{
+    object-position: 100% 0%;
+}
+
+.cimg1{
+    object-position: 0% 50%;
+}
+
+.cimg2{
+    object-fit: contain;
+    transform: scale(.9);
+}
+
+/* Center the navigation buttons within each slide */
+.navigation-manual, .bnavigation-manual, .cnavigation-manual {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed to move buttons */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn, .bmanual-btn,  .cmanual-btn{
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child), .bmanual-btn:not(:last-child), .cmanual-btn:not(:last-child) {
+    margin-right: 20px; /* Reduced margin for better fit */
+}
+
+.manual-btn:hover, .bmanual-btn:hover, .cmanual-btn:hover {
+    background-color: #ccc;
+}
+
+/* Slide transitions */
+#radio1:checked ~ .first {
+    margin-left: 0%;
+}
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#bradio1:checked ~ .first {
+    margin-left: 0%;
+}
+#bradio2:checked ~ .first {
+    margin-left: -20%;
+}
+#bradio3:checked ~ .first {
+    margin-left: -40%;
+}
+#cradio1:checked ~ .first {
+    margin-left: 0%;
+}
+#cradio2:checked ~ .first {
+    margin-left: -20%;
+}
+#cradio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+/* Automatic nav styling */
+.navigation-auto, .bnavigation-auto, .cnavigation-auto {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed to move buttons */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div, .bnavigation-auto div, .cnavigation-auto div {
+    border: 2px solid #333;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child), .bnavigation-auto div:not(:last-child), .cnavigation-auto div:not(:last-child) {
+    margin-right: 20px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn-1,
+#radio2:checked ~ .navigation-auto .auto-btn-2,
+#radio3:checked ~ .navigation-auto .auto-btn-3,
+#bradio1:checked ~ .navigation-auto .auto-btn-1,
+#bradio2:checked ~ .navigation-auto .auto-btn-2,
+#bradio3:checked ~ .navigation-auto .auto-btn-3,
+#cradio1:checked ~ .navigation-auto .auto-btn-1,
+#cradio2:checked ~ .navigation-auto .auto-btn-2,
+#cradio3:checked ~ .navigation-auto .auto-btn-3  {
+    background-color: #ccc;
+}
+
+
+
+.slider-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Space between sliders */
+    width: 28vw;
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.slider-text {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0 10px;
+    text-align: center;
+}
+
+.slider-text p {
+    color: white;
+    padding: 10px 0;
+}
+
+.main-text{
+    color: white;
+    width: 75%;
+    text-align: center;
+}
+
+.arrow.active {
+    transform: rotate(180deg); /* Rotates the arrow when active */
+}
+
+
+/*
+img{
+    object-fit: cover;
+    height: 500px !important;
+    width: 500px !important;
+    border-radius: 10% !important;
+    border: 10px solid rgb(255, 255, 255) !important;
+    margin-bottom: 10px;
+
+} */
+
+
+/* .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.label {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+} */
+
+/* .arrow {
+    margin-left: 10px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.more-text {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    background-color: #444;
+    color: #fff;
+    font-size: 0.9em;
+    text-align: center;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.gallery-item.expanded .more-text {
+    max-height: 200px;
+    opacity: 1;
+}
+
+.expandedArrow {
+    transform: rotate(90deg);
+} */
+
+header {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    top: 0px;
+    left: 0px;
+    align-items: center;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-style: none;
+    color: white;
+    transition: 1s;
+}
+
+a:hover {
+    font-size: 1.2em;
+}

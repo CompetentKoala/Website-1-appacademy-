@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=Rubik:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index4.css">
     <title>Cameron Kuykendall Portfolio</title>
 </head>
 
@@ -21,27 +21,25 @@
     </header>
 
     <div class="centerdiv4">
-        <form action="#" method="post">
-            <fieldset class="fieldset">
-                <legend>Contact Me</legend>
+        <form action="https://formsubmit.co/cameronkuy@gmail.com" method="post">
+            <fieldset class="fieldset" >
+                <p>Contact Me</p>
 
-                <label for="fname">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <label for="fname"></label>
+                <input type="text" placeholder="Full Name" id="name" name="name" required>
 
-                <label for="lname">Last Name:</label>
-                <input type="text" id="lname" name="lname" required>
+                <label for="email"></label>
+                <input type="email" placeholder="Email" id="email" name="email" required>
 
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email" required>
+                <label for="subject"></label>
+                <input type="text" placeholder="Subject" id="email" name="subject" required>
 
-                <label for="subscribe">Do you need a quick response?</label>
-                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="message"></label>
+                <textarea id="msg" placeholder="Message" name="message" rows="4" cols="50" required></textarea>
 
-                <label for="subscribe">Are you a company?</label>
-                <input type="radio" id="subscribe" name="subscribe">
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                <input type="hidden" name="_next" value="https://google.com">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
 
                 <button type="submit">Submit</button>
             </fieldset>

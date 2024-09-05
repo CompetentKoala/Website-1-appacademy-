@@ -6,7 +6,7 @@ body{
     /* background-image:url(background3.jpeg); */
     color:rgb(0, 0, 0);
     background-size: 100vh;
-    background-color: #454545;                 /* <------ */
+    background-color: #000000;                 /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;
     display: flex;
@@ -28,7 +28,7 @@ img{
 }
 
 /* BUBBLES */
-.skills::before{
+/* .skills::before{
     content: '';
     position: absolute;
     top: 60px;
@@ -89,7 +89,32 @@ img{
     border-bottom: 10px solid #fff;
     filter: blur(8px);
     transform: rotate(330deg);
+} */
+@keyframes pop {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.4);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
 }
+
+.pop-animation {
+    animation: pop 0.2s forwards;
+}
+
+/* .staticText{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: ceneter;
+} */
 
 
 header{
@@ -127,14 +152,14 @@ a:hover{
 
 .whatCanIDo{
     font-size: 60px;
-    text-shadow: 0px 0px 50px  rgb(8, 206, 255);
+    text-shadow: 1px 1px 2px red, 0 0 1em rgb(0, 225, 255), 0 0 0.2em rgb(0, 208, 255);
     z-index: 10000;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 .whatCanIDo1{
     font-size: 30px;
-    text-shadow: 0px 0px 50px 100px  rgb(8, 206, 255);
+    text-shadow: 1px 1px 2px red, 0 0 1em rgb(0, 225, 255), 0 0 0.2em rgb(0, 208, 255);
     z-index: 10000;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: rgb(255, 255, 255);
@@ -210,12 +235,12 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 1rem;
-    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
     align-items: center;
-    /* border: solid 10px black; */
+    border: solid 10px rgb(255, 255, 255);
     border-radius: 200px;
-    background-color: #08080800;
+    background-color: #56565666;
     padding-right: 10px;
     padding-left: 10px;
     width: 300px;
@@ -223,14 +248,15 @@ h1{
     transition: left .3s ease-in-out, top .3s ease-in-out;
     z-index: 9999;
     transform-origin: center center; /* Scale from center */
-
+    -webkit-text-stroke-width: .3px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 
 
 
 
 .skills:hover{
-    transform: scale(1.2);
+    transform: scale(1.7);
 }
 .insideSkills{
     margin-top: -20px;
@@ -259,16 +285,6 @@ h1{
     border: solid 10px black;
 }
 
-.fieldset{
-    padding: 25px;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 footer{
     position: fixed;
     background-color: black;
@@ -283,10 +299,11 @@ footer{
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     justify-content: space-around;
+    align-content: center;
     padding: 20px;
     position: relative;
-    top: 50px;
 }
 
 .gallery-item {
@@ -386,12 +403,13 @@ footer{
 .skills{
     height: 100px;
     width: 100px;
-    font-size: .6rem;
+    font-size: 1rem;
     border-radius: 100px;
 }
 
 .insideSkills{
     margin-top: .5px;
+    font-size: 1rem;
 }
 
 
