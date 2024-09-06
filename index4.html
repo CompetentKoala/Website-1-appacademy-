@@ -21,7 +21,8 @@
     </header>
 
     <div class="centerdiv4">
-        <form action="https://formsubmit.co/cameronkuy@gmail.com" method="post">
+        <div class="loading-bar" id="loading-bar"></div>
+        <form action="https://formsubmit.co/cameronkuy@gmail.com" method="post" id="myform">
             <fieldset class="fieldset" >
                 <p>Contact Me</p>
 
@@ -37,17 +38,50 @@
                 <label for="message"></label>
                 <textarea id="msg" placeholder="Message" name="message" rows="4" cols="50" required></textarea>
 
-                <input type="hidden" name="_next" value="https://google.com">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5502/index5.html">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
 
-                <button type="submit">Submit</button>
+                <button type="submit" id="submit">Submit</button>
             </fieldset>
         </form>
 
     </body>
     </html>
     </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    function validateForm() {
+        const inputs = document.querySelectorAll('#myform');
+        let allValid = true;
+
+        inputs.forEach(input => {
+            if (!input.value) {
+                allValid = false;
+            }
+        });
+        console.log("VALIDATED TRUE")
+        return allValid;
+
+    }
+
+    function loadBar() {
+        const button = document.getElementById('submit');
+        button.addEventListener('click', (event) => {
+            if (validateForm()) {
+                const loadBar = document.getElementById('loading-bar');
+                loadBar.classList.remove('loading-bar');
+                loadBar.classList.add('fadein');
+            } else {
+                return;
+            }
+        });
+    }
+
+    loadBar();
+});
+    </script>
 </body>
 <footer class="footer"></footer>
 

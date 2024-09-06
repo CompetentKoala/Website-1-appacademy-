@@ -141,17 +141,25 @@ body {
     margin-right: 20px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn-1,
-#radio2:checked ~ .navigation-auto .auto-btn-2,
-#radio3:checked ~ .navigation-auto .auto-btn-3,
-#bradio1:checked ~ .navigation-auto .auto-btn-1,
-#bradio2:checked ~ .navigation-auto .auto-btn-2,
-#bradio3:checked ~ .navigation-auto .auto-btn-3,
-#cradio1:checked ~ .navigation-auto .auto-btn-1,
-#cradio2:checked ~ .navigation-auto .auto-btn-2,
-#cradio3:checked ~ .navigation-auto .auto-btn-3  {
+/* Highlight manual navigation buttons */
+#radio1:checked ~ .navigation-manual .manual-btn:nth-child(1),
+#radio2:checked ~ .navigation-manual .manual-btn:nth-child(2),
+#radio3:checked ~ .navigation-manual .manual-btn:nth-child(3) {
     background-color: #ccc;
 }
+
+#bradio1:checked ~ .bnavigation-manual .bmanual-btn:nth-child(1),
+#bradio2:checked ~ .bnavigation-manual .bmanual-btn:nth-child(2),
+#bradio3:checked ~ .bnavigation-manual .bmanual-btn:nth-child(3) {
+    background-color: #ccc;
+}
+
+#cradio1:checked ~ .cnavigation-manual .cmanual-btn:nth-child(1),
+#cradio2:checked ~ .cnavigation-manual .cmanual-btn:nth-child(2),
+#cradio3:checked ~ .cnavigation-manual .cmanual-btn:nth-child(3) {
+    background-color: #ccc;
+}
+
 
 
 

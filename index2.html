@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=Rubik:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index2.css">
     <title>Cameron Kuykendall Portfolio</title>
 </head>
 
@@ -20,40 +20,55 @@
         <div class="header-item"><a href="index4.html">Contact</a></div>
     </header>
 
-    <div class="background2">
-
+        <h1>SOME OF MY PROJECTS</h1>
         <div class="centerdiv2">
-            <h1>SOME OF MY PROJECTS</h1>
-
-            <ul class="list">
-                <li>
-                    <h2><a href="https://github.com/CompetentKoala/RockPaperScissors">Rock Paper<br> Scissors</a></h2>
-                </li>
-                <li>
-                    <h2><a href="https://github.com/CompetentKoala/ToDoList">To Do List</a></h2>
-                </li>
-
-                <li>
-                    <h2><a href="https://github.com/CompetentKoala/ChromeEXTLeadsTracker">Leads Tracker Extention</a></h2>
-
-                </li>
-
-                <li>
-                    <h2><a href="https://github.com/CompetentKoala/Mobile-App-Item-Shopping-Cart-">Mobile App Shopping</a></h2>
-
-                </li>
-
-                <li>
-                    <h2><a href="https://github.com/CompetentKoala/Swift-UI-Weather-App">Swift UI Weather</a></h2>
-                </li>
-
-                <li>
-                    <h2><a href="https://github.com/CompetentKoala/JSX.Movieland">JSX Movie-Land</a></h2>
-                </li>
-
+            <a href="#" class="number" data-image="image1">1</a>
+            <a href="#" class="number" data-image="image2">2</a>
+            <a href="#" class="number" data-image="image3">3</a>
+            <a href="#" class="number" data-image="image4">4</a>
         </div>
+    </header>
+    <a href="https://example.com" class="hover-image image1">
+        <img src="/IMAGES/10.jpg" alt="Image 1">
+    </a>
+    <a href="https://example.com" class="hover-image image2">
+        <img src="/IMAGES/14.jpg" alt="Image 2">
+    </a>
+    <a href="https://example.com" class="hover-image image3">
+        <img src="/IMAGES/16.jpg" alt="Image 3">
+    </a>
+    <a href="https://example.com" class="hover-image image4">
+        <img src="/IMAGES/2.jpeg" alt="Image 4">
+    </a>
 
-    </div>
+
+        <script>
+
+document.addEventListener('DOMContentLoaded', () => {
+    const numbers = document.querySelectorAll('.number');
+    const hoverImages = document.querySelectorAll('.hover-image');
+
+    numbers.forEach(number => {
+        number.addEventListener('mouseover', () => {
+            const imageClass = number.getAttribute('data-image');
+            hoverImages.forEach(image => {
+                if (image.classList.contains(imageClass)) {
+                    image.classList.add('show');
+                } else {
+                    image.classList.remove('show');
+                }
+            });
+        });
+
+        number.addEventListener('mouseout', () => {
+            hoverImages.forEach(image => {
+                image.classList.remove('show');
+            });
+        });
+    });
+});
+
+        </script>
 </body>
 <footer class="footer"></footer>
 
