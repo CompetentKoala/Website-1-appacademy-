@@ -309,3 +309,25 @@ a {
 a:hover {
     font-size: 1.2em;
 }
+
+@media only screen and (max-width: 480px){
+    .header{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+        z-index: 100;
+    }
+    body{
+        overflow: visible;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1000px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slider-container{
+        width: 80%;
+    }
+}

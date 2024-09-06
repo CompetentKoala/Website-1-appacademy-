@@ -22,27 +22,37 @@
 
         <h1>SOME OF MY PROJECTS</h1>
         <div class="centerdiv2">
-            <a href="#" class="number" data-image="image1">1</a>
-            <a href="#" class="number" data-image="image2">2</a>
-            <a href="#" class="number" data-image="image3">3</a>
-            <a href="#" class="number" data-image="image4">4</a>
+            <a href="https://idk-food.netlify.app" class="number" data-image="image1" target="_blank">IDK FOOD</a>
+            <a href="https://shoppingcatapp.netlify.app" class="number" data-image="image2" target="_blank">SHOPPING CAT</a>
+            <a href="https://exquisite-starship-cc4677.netlify.app" class="number" data-image="image3" target="_blank">Lead EXT.</a>
         </div>
     </header>
-    <a href="https://example.com" class="hover-image image1">
-        <img src="/IMAGES/10.jpg" alt="Image 1">
+    <a href="https://idk-food.netlify.app" class="hover-image image1">
+        <img src="/IMAGES/23.png" alt="Image 1">
     </a>
-    <a href="https://example.com" class="hover-image image2">
-        <img src="/IMAGES/14.jpg" alt="Image 2">
-    </a>
-    <a href="https://example.com" class="hover-image image3">
-        <img src="/IMAGES/16.jpg" alt="Image 3">
-    </a>
-    <a href="https://example.com" class="hover-image image4">
-        <img src="/IMAGES/2.jpeg" alt="Image 4">
+    <a href="https://shoppingcatapp.netlify.app" class="hover-image image2">
+        <img src="/IMAGES/22.png" alt="Image 2">
     </a>
 
+    <a href="https://exquisite-starship-cc4677.netlify.app" class="hover-image image3">
+        <img src="/IMAGES/24.png" alt="Image 3">
+    </a>
 
         <script>
+
+function toggleText(arrow) {
+    const text = arrow.nextElementSibling;
+    const maxHeight = text.scrollHeight + "px";
+
+    if (text.style.maxHeight) {
+        text.style.maxHeight = null; // Collapse text
+        arrow.classList.remove('active'); // Reset arrow rotation
+    } else {
+        text.style.maxHeight = maxHeight; // Expand text
+        arrow.classList.add('active'); // Rotate arrow
+    }
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const numbers = document.querySelectorAll('.number');

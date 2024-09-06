@@ -147,3 +147,71 @@ legend{
     86.67% {-webkit-mask-size:0    0   ,0    0   ,100% 100%,auto}
     100%   {-webkit-mask-size:0    0   ,0    0   ,0    0   ,auto}
   }
+
+
+  @media only screen and (max-width: 480px){
+    .header{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+        z-index: 100;
+    }
+
+    .fieldset{
+        padding: 25px;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-family: Oswald;
+        font-size: 1.5rem;
+        border: 2px  rgb(0, 185, 246);
+        border-radius: 40px;
+        box-shadow: rgba(255, 255, 255, 0) 0px 0px 20px;
+        margin-top: 40px ;
+    }
+
+
+input{
+    width: 40%;
+    height: 40px
+}
+input, textarea{
+    background-color: #000000;
+    border: 1.5px solid rgb(0, 185, 246);
+    border-radius: 40px;
+    margin: 10px;
+    color: white;
+    font-family: Oswald;
+    font-size: 1.5rem;
+    padding-left: 20px;
+    box-shadow: white 0px 0px 10px;
+}
+textarea{
+    padding-top: 20px;
+    padding-right: 20px;
+    width: 50%;
+}
+
+#loading-bar {
+    position: fixed;
+    object-fit: 50% 50%;
+    transition: opacity 1s;
+    width: 200px;
+    height: calc(200px*0.866);
+    background: #ffffff;
+    clip-path: polygon(50% 0,100% 100%,0 100%);
+    --c:at 50% 66%,#000 60deg,#0000 0;
+    -webkit-mask:
+      conic-gradient(from  30deg var(--c)) right,
+      conic-gradient(from 150deg var(--c)) bottom,
+      conic-gradient(from -90deg var(--c)) left,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor;
+            mask-composite:exclude;
+    -webkit-mask-repeat:no-repeat;
+    animation: l9 3s infinite;
+
+  }
+  }

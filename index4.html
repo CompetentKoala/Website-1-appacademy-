@@ -51,31 +51,41 @@
     </div>
 
     <script>
-        allValid = false
-    document.addEventListener('DOMContentLoaded', () => {
+
+document.addEventListener('DOMContentLoaded', () => {
     function validateForm() {
-        const inputs = document.querySelectorAll('#myform');
+        const inputs = document.querySelectorAll('#myform input');
         let allValid = true;
 
         inputs.forEach(input => {
             if (!input.value) {
+                console.log("FAALLSEE");
                 allValid = false;
             }
         });
-        console.log("VALIDATED TRUE")
-        return allValid = true;
 
+        if (allValid) {
+            console.log("VALIDATED TRUE");
+        }
+
+        return allValid;
     }
 
     function loadBar() {
         const button = document.getElementById('submit');
         button.addEventListener('click', (event) => {
-            if (allValid = true) {
+    
+
+            const allValid = validateForm(); // Call validateForm to get the current status
+            console.log(allValid);
+
+            if (allValid) {
                 const loadBar = document.getElementById('loading-bar');
                 loadBar.classList.remove('loading-bar');
                 loadBar.classList.add('fadein');
             } else {
-                return;
+                // Handle the case when the form is not valid (e.g., show an error message)
+                console.log("Form is not valid");
             }
         });
     }
