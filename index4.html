@@ -51,6 +51,7 @@
     </div>
 
     <script>
+        allValid = false
     document.addEventListener('DOMContentLoaded', () => {
     function validateForm() {
         const inputs = document.querySelectorAll('#myform');
@@ -62,14 +63,14 @@
             }
         });
         console.log("VALIDATED TRUE")
-        return allValid;
+        return allValid = true;
 
     }
 
     function loadBar() {
         const button = document.getElementById('submit');
         button.addEventListener('click', (event) => {
-            if (validateForm()) {
+            if (allValid = true) {
                 const loadBar = document.getElementById('loading-bar');
                 loadBar.classList.remove('loading-bar');
                 loadBar.classList.add('fadein');

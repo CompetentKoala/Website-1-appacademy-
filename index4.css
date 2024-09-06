@@ -126,14 +126,14 @@ legend{
     background: #ffffff;
     clip-path: polygon(50% 0,100% 100%,0 100%);
     --c:at 50% 66%,#000 60deg,#0000 0;
-    --webkit-mask:
+    -webkit-mask:
       conic-gradient(from  30deg var(--c)) right,
       conic-gradient(from 150deg var(--c)) bottom,
       conic-gradient(from -90deg var(--c)) left,
       linear-gradient(#000 0 0);
     -webkit-mask-composite:xor;
             mask-composite:exclude;
-    --webkit-mask-repeat:no-repeat;
+    -webkit-mask-repeat:no-repeat;
     animation: l9 3s infinite;
 
   }
