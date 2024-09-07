@@ -38,7 +38,7 @@
                 <label for="message"></label>
                 <textarea id="msg" placeholder="Message" name="message" rows="4" cols="50" required></textarea>
 
-                <input type="hidden" name="_next" value="http://127.0.0.1:5502/index5.html">
+                <input type="hidden" name="_next" value="https://cameronk.netlify.app/index5">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
 
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function loadBar() {
         const button = document.getElementById('submit');
         button.addEventListener('click', (event) => {
-    
+
 
             const allValid = validateForm(); // Call validateForm to get the current status
             console.log(allValid);
